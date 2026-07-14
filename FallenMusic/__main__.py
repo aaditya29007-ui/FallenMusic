@@ -44,6 +44,7 @@ from FallenMusic.Modules import ALL_MODULES
 
 
 async def fallen_startup():
+keep_alive()
     LOGGER.info("[•] Loading Modules...")
     for module in ALL_MODULES:
         importlib.import_module("FallenMusic.Modules." + module)
